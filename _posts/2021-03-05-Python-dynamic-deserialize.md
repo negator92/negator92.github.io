@@ -10,6 +10,7 @@ I didn't want to describe so many fields in the class constructor, and since my 
 
 I used the following construction for such a codehack to get the desired result:
 
+---
 ```import json
 
 class ClassName(object):
@@ -25,6 +26,7 @@ print(config.username)
 print(config.password)
 print(config.token)
 ```
+---
 
 This allowed me to avoid writing scary references to the dictionary element.
 Nevertheless, I must repeat that the explicit is better than the implicit. The fact that I have to write in a dynamic language relaxes me too much and makes me lazy, although I understand that in C# I would describe every field, perhaps I would also use attributes (but this is not accurate, lol).
